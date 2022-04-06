@@ -14,3 +14,19 @@ def largest(list):
 
 print(largest([10, 4, 2, 231, 91, 54]))
 
+# 3. Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
+
+def occurances(string, substring):
+  return string.count(substring)
+
+print(occurances('fleep floop', 'fe'))
+
+# 4. Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product. HINT: Review your notes on args.
+
+def product(*args):
+  num = 1
+  for arg in args:
+    num *= arg
+  return num
+
+print(product(4, 0.5, 5))
